@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  margin: 0 50px;
+  margin: ${({ noMargin }) => (noMargin ? "0" : "0 50px")};
   height: 35px;
   top: 0;
   display: flex;

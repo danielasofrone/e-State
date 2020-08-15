@@ -4,7 +4,7 @@ import * as C from "../NavigationBar/navigationBar.styled";
 import back from "../../assets/icons/back.svg";
 
 const SubNavigationBar = () => (
-  <C.Wrapper>
+  <C.Wrapper noMargin>
     <S.LeftSide>
       <C.Icon src={back}></C.Icon>
       <S.Applicants>Applicants</S.Applicants>
