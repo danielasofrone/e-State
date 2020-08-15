@@ -14,7 +14,10 @@ const NavigationBar = () => (
       <S.Logo src={logo}></S.Logo>
     </S.Left>
     <S.Right>
-      <S.Icon src={contact_support}></S.Icon>
+      <S.ContactSupport>
+        <S.Icon noMargin src={contact_support}></S.Icon>
+        <S.Text> Contact Support</S.Text>
+      </S.ContactSupport>
       <S.Icon src={active}></S.Icon>
       <S.Icon src={user}></S.Icon>
       <S.Icon noMargin src={power_settings}></S.Icon>

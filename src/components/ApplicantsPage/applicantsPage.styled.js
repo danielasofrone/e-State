@@ -9,12 +9,10 @@ export const Wrapper = styled.div`
   padding: 32px;
 `;
 
-// position: absolute;
-// width: 1340px;
-// height: 1078px;
-// left: 50px;
-// top: 80px;
-
-// background: #FFFFFF;
-// box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-// border-radius: 3px;
+export const ElementsContainer = styled.div``;
+export const SearchBar = styled.input`
+  width: 305px;
+  height: 45px;
+  border: 1px solid #e6e6e6;
+  border-radius: 4px;
+`;

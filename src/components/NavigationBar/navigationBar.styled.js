@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.div`
-  /* width: 100%; */
   margin: 0 50px;
   height: 35px;
   top: 0;
@@ -28,4 +27,19 @@ export const Logo = styled.img`
   width: 142px;
   margin-bottom: 5px;
   cursor: pointer;
+`;
+
+export const ContactSupport = styled.div`
+  display: flex;
+  margin-right: 32px;
+  float: left;
+`;
+
+export const Text = styled.div`
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4a4a4a;
+  padding-left: 10px;
 `;
