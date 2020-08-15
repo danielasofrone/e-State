@@ -1,14 +1,11 @@
 import styled from "styled-components";
 
 export const Wrapper = styled.main`
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 10;
+  /* position: fixed;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: center; */
   background: #e5e5e5;
 `;
