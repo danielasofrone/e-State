@@ -1,0 +1,122 @@
+[
+  {
+    "label": "Appointment set",
+    "participants": [
+      {
+        "name": "Friedrich Heinrich",
+        "phone": "+49 17398470267",
+        "email": "friedlich.heinrich@gmail.com"
+      },
+      {
+        "name": "Hans Ulrich",
+        "phone": "+49 17398470267",
+        "email": "hans-ulrich@gmail.com"
+      },
+      {
+        "name": "Karlheinz Brandenburg",
+        "phone": "+49 17398470267",
+        "email": "karlheinzbrandenburg@gmail.com"
+      },
+      {
+        "name": "Christin Bosch",
+        "phone": "+49 17398470267",
+        "email": "christian.bosch@gmail.com"
+      },
+      {
+        "name": "Klaus Muller",
+        "phone": "+49 17398470267",
+        "email": "klaus.muller@gmail.com"
+      },
+      {
+        "name": "Marco Klein",
+        "phone": "+49 17398470267",
+        "email": "marco-klein@gmail.com"
+      }
+    ]
+  },
+  {
+    "label": "Property viewed",
+    "participants": [
+      {
+        "name": "Katja Gottlieb",
+        "phone": "+49 17398470267",
+        "email": "katja_gottlieb@gmail.com"
+      },
+      {
+        "name": "Erik Meier",
+        "phone": "+49 17398470267",
+        "email": "eric-meier@gmail.com"
+      },
+      {
+        "name": "Anja Sommer",
+        "phone": "+49 17398470267",
+        "email": "anja-sommer@gmail.com"
+      },
+      {
+        "name": "Stephan Lang",
+        "phone": "+49 17398470267",
+        "email": "s.lang@gmail.com"
+      },
+      {
+        "name": "Dominik Herrmann",
+        "phone": "+49 17398470267",
+        "email": "dominikhermann@gmail.com"
+      },
+      {
+        "name": "Julianne Nussbaum",
+        "phone": "+49 17398470267",
+        "email": "juli.nussbaum@gmail.com"
+      },
+      {
+        "name": "Christian Wexler",
+        "phone": "+49 17398470267",
+        "email": "christian.wex@gmail.com"
+      }
+    ]
+  },
+  {
+    "label": "Interested",
+    "participants": [
+      {
+        "name": "Barbara Wechsler",
+        "phone": "+49 17398470267",
+        "email": "b.wechsler@gmail.com"
+      },
+      {
+        "name": "Dennis Becker",
+        "phone": "+49 17398470267",
+        "email": "dennis.b@gmail.com"
+      },
+      {
+        "name": "Ulrike Wolf",
+        "phone": "+49 17398470267",
+        "email": "u.wolf@gmail.com"
+      },
+      {
+        "name": "Johann Wirth",
+        "phone": "+49 17398470267",
+        "email": "johann.wirth@gmail.com"
+      }
+    ]
+  },
+  {
+    "label": "Offer accepted",
+    "participants": [
+      {
+        "name": "Julian Traugott",
+        "phone": "+49 17398470267",
+        "email": "j.traugott@gmail.com"
+      },
+      {
+        "name": "Stefan Gerber",
+        "phone": "+49 17398470267",
+        "email": "friedlich.heinrich@gmail.com"
+      },
+      {
+        "name": "Max Krüger",
+        "phone": "+49 17398470267",
+        "email": "max.krueger@gmail.com"
+      }
+    ]
+  }
+]
