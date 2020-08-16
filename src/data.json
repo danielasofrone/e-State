@@ -1,122 +1,162 @@
 [
   {
-    "label": "Appointment set",
-    "participants": [
-      {
-        "name": "Friedrich Heinrich",
-        "phone": "+49 17398470267",
-        "email": "friedlich.heinrich@gmail.com"
-      },
-      {
-        "name": "Hans Ulrich",
-        "phone": "+49 17398470267",
-        "email": "hans-ulrich@gmail.com"
-      },
-      {
-        "name": "Karlheinz Brandenburg",
-        "phone": "+49 17398470267",
-        "email": "karlheinzbrandenburg@gmail.com"
-      },
-      {
-        "name": "Christin Bosch",
-        "phone": "+49 17398470267",
-        "email": "christian.bosch@gmail.com"
-      },
-      {
-        "name": "Klaus Muller",
-        "phone": "+49 17398470267",
-        "email": "klaus.muller@gmail.com"
-      },
-      {
-        "name": "Marco Klein",
-        "phone": "+49 17398470267",
-        "email": "marco-klein@gmail.com"
-      }
-    ]
+    "name": "Friedrich Heinrich",
+    "phone": "+49 17398470267",
+    "email": "friedlich.heinrich@gmail.com",
+    "status": "Appointment_Set",
+    "bid": "2500000",
+    "status_appointment": "2020-08-20T12:00:27.87+00:20"
   },
   {
-    "label": "Property viewed",
-    "participants": [
-      {
-        "name": "Katja Gottlieb",
-        "phone": "+49 17398470267",
-        "email": "katja_gottlieb@gmail.com"
-      },
-      {
-        "name": "Erik Meier",
-        "phone": "+49 17398470267",
-        "email": "eric-meier@gmail.com"
-      },
-      {
-        "name": "Anja Sommer",
-        "phone": "+49 17398470267",
-        "email": "anja-sommer@gmail.com"
-      },
-      {
-        "name": "Stephan Lang",
-        "phone": "+49 17398470267",
-        "email": "s.lang@gmail.com"
-      },
-      {
-        "name": "Dominik Herrmann",
-        "phone": "+49 17398470267",
-        "email": "dominikhermann@gmail.com"
-      },
-      {
-        "name": "Julianne Nussbaum",
-        "phone": "+49 17398470267",
-        "email": "juli.nussbaum@gmail.com"
-      },
-      {
-        "name": "Christian Wexler",
-        "phone": "+49 17398470267",
-        "email": "christian.wex@gmail.com"
-      }
-    ]
+    "name": "Hans Ulrich",
+    "phone": "+49 17398470267",
+    "email": "hans-ulrich@gmail.com",
+    "status": "Property_Viewed",
+    "bid": "2230000",
+    "status_appointment": "2020-09-20T12:00:27.87+00:20"
   },
   {
-    "label": "Interested",
-    "participants": [
-      {
-        "name": "Barbara Wechsler",
-        "phone": "+49 17398470267",
-        "email": "b.wechsler@gmail.com"
-      },
-      {
-        "name": "Dennis Becker",
-        "phone": "+49 17398470267",
-        "email": "dennis.b@gmail.com"
-      },
-      {
-        "name": "Ulrike Wolf",
-        "phone": "+49 17398470267",
-        "email": "u.wolf@gmail.com"
-      },
-      {
-        "name": "Johann Wirth",
-        "phone": "+49 17398470267",
-        "email": "johann.wirth@gmail.com"
-      }
-    ]
+    "name": "Karlheinz Brandenburg",
+    "phone": "+49 17398470267",
+    "email": "karlheinzbrandenburg@gmail.com",
+    "status": "Interested",
+    "bid": "5600000",
+    "status_appointment": "2020-08-25T12:00:27.87+00:20"
   },
   {
-    "label": "Offer accepted",
-    "participants": [
-      {
-        "name": "Julian Traugott",
-        "phone": "+49 17398470267",
-        "email": "j.traugott@gmail.com"
-      },
-      {
-        "name": "Stefan Gerber",
-        "phone": "+49 17398470267",
-        "email": "friedlich.heinrich@gmail.com"
-      },
-      {
-        "name": "Max Krüger",
-        "phone": "+49 17398470267",
-        "email": "max.krueger@gmail.com"
-      }
-    ]
+    "name": "Christin Bosch",
+    "phone": "+49 17398470267",
+    "email": "christian.bosch@gmail.com",
+    "status": "Appointment_Set",
+    "bid": "3400000",
+    "status_appointment": "2020-08-20T18:00:27.87+00:20"
+  },
+  {
+    "name": "Klaus Muller",
+    "phone": "+49 17398470267",
+    "email": "klaus.muller@gmail.com",
+    "status": "Interested",
+    "bid": "700000",
+    "status_appointment": "2020-08-15T16:00:27.87+00:20"
+  },
+  {
+    "name": "Marco Klein",
+    "phone": "+49 17398470267",
+    "email": "marco-klein@gmail.com",
+    "status": "Appointment_Set",
+    "bid": "650000",
+    "status_appointment": "2020-10-20T15:00:27.87+00:20"
+  },
+  {
+    "name": "Katja Gottlieb",
+    "phone": "+49 17398470267",
+    "email": "katja_gottlieb@gmail.com",
+    "status": "Property_Viewed",
+    "bid": "560000",
+    "status_appointment": "2020-08-30T13:00:27.87+00:20"
+  },
+  {
+    "name": "Erik Meier",
+    "phone": "+49 17398470267",
+    "email": "eric-meier@gmail.com",
+    "status": "Interested",
+    "bid": "450000",
+    "status_appointment": "2020-08-29T14:00:27.87+00:20"
+  },
+  {
+    "name": "Anja Sommer",
+    "phone": "+49 17398470267",
+    "email": "anja-sommer@gmail.com",
+    "status": "Property_Viewed",
+    "bid": "740000",
+    "status_appointment": "2020-08-20T17:00:27.87+00:20"
+  },
+  {
+    "name": "Stephan Lang",
+    "phone": "+49 17398470267",
+    "email": "s.lang@gmail.com",
+    "status": "Property_Viewed",
+    "bid": "360000",
+    "status_appointment": "2020-08-19T18:00:27.87+00:20"
+  },
+  {
+    "name": "Dominik Herrmann",
+    "phone": "+49 17398470267",
+    "email": "dominikhermann@gmail.com",
+    "status": "Offer_Accepted",
+    "bid": "510000",
+    "status_appointment": "2020-09-03T12:00:27.87+00:20"
+  },
+  {
+    "name": "Julianne Nussbaum",
+    "phone": "+49 17398470267",
+    "email": "juli.nussbaum@gmail.com",
+    "status": "Offer_Accepted",
+    "bid": "220000",
+    "status_appointment": "2020-08-26T12:00:27.87+00:20"
+  },
+  {
+    "name": "Christian Wexler",
+    "phone": "+49 17398470267",
+    "email": "christian.wex@gmail.com",
+    "status": "Property_Viewed",
+    "bid": "900000",
+    "status_appointment": "2020-08-28T12:00:27.87+00:20"
+  },
+  {
+    "name": "Barbara Wechsler",
+    "phone": "+49 17398470267",
+    "email": "b.wechsler@gmail.com",
+    "status": "Appointment_Set",
+    "bid": "890000",
+    "status_appointment": "2020-08-20T15:00:27.87+00:20"
+  },
+  {
+    "name": "Dennis Becker",
+    "phone": "+49 17398470267",
+    "email": "dennis.b@gmail.com",
+    "status": "Property_Viewed",
+    "bid": "670000",
+    "status_appointment": "2020-08-15T12:00:27.87+00:20"
+  },
+  {
+    "name": "Ulrike Wolf",
+    "phone": "+49 17398470267",
+    "email": "u.wolf@gmail.com",
+    "status": "Appointment_Set",
+    "bid": "900000",
+    "status_appointment": "2020-09-05T12:00:27.87+00:20"
+  },
+  {
+    "name": "Johann Wirth",
+    "phone": "+49 17398470267",
+    "email": "johann.wirth@gmail.com",
+    "status": "Offer_Accepted",
+    "bid": "530000",
+    "status_appointment": "2020-08-22T12:00:27.87+00:20"
+  },
+  {
+    "name": "Julian Traugott",
+    "phone": "+49 17398470267",
+    "email": "j.traugott@gmail.com",
+    "status": "Offer_Accepted",
+    "bid": "710000",
+    "status_appointment": "2020-08-23T13:00:27.87+00:20"
+  },
+  {
+    "name": "Stefan Gerber",
+    "phone": "+49 17398470267",
+    "email": "friedlich.heinrich@gmail.com",
+    "status": "",
+    "bid": "390000",
+    "status_appointment": "2020-09-06T12:00:27.87+00:20"
+  },
+  {
+    "name": "Max Krüger",
+    "phone": "+49 17398470267",
+    "email": "max.krueger@gmail.com",
+    "status": "Appointment_Set",
+    "bid": "720000",
+    "status_appointment": "2020-10-09T13:00:27.87+00:20"
   }
 ]
