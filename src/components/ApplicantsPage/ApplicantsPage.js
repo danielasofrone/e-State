@@ -7,11 +7,11 @@ const ApplicantsPage = () => (
     <SubNavigationBar />
     <S.SearchBar />
     <S.CategoryTitle>Appointment set</S.CategoryTitle>
-    <S.Grid>
+    {/* <S.Grid>
       <S.Card>text</S.Card>
       <S.Card>text</S.Card>
       <S.Card>text</S.Card>
-    </S.Grid>
+    </S.Grid> */}
   </S.Wrapper>
 );
 

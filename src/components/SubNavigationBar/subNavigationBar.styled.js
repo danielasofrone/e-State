@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+export const Container = styled.div`
+  display: flex;
+  flex-direction: row;
+  white-space: normal;
+`;
 export const LeftSide = styled.div`
   display: flex;
 `;
@@ -19,7 +24,7 @@ export const SeparatingBorder = styled.div`
 export const Icon = styled.img`
   height: 32px;
   width: 32px;
-  margin-right: ${({ noMargin }) => (noMargin ? "0" : "32px")};
+  margin-right: 15px;
   cursor: pointer;
 `;
 
@@ -40,17 +45,25 @@ export const SubNavUnit = styled.div`
 export const NumberUnit = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
   color: #4a4a4a;
+  @media (min-width: 868px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 `;
 
 export const TextUnit = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
+  font-size: 10px;
+  line-height: 16px;
   text-align: center;
   color: #4a4a4a;
+  @media (min-width: 868px) {
+    font-size: 14px;
+    line-height: 20px;
+  }
 `;

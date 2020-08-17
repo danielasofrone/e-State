@@ -6,9 +6,10 @@ import back from "../../assets/icons/back.svg";
 const SubNavigationBar = () => (
   <C.Wrapper noMargin>
     <S.LeftSide>
-      <C.Icon src={back}></C.Icon>
+      <S.Icon noMargin src={back}></S.Icon>
       <S.Applicants>Applicants</S.Applicants>
     </S.LeftSide>
+
     <S.RightSide>
       <S.SubNavUnit>
         <S.NumberUnit>25</S.NumberUnit>

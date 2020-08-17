@@ -11,35 +11,73 @@ export const Wrapper = styled.div`
   padding: 15px 0;
 `;
 
-export const Left = styled.div``;
+export const LeftSide = styled.div``;
 
-export const Right = styled.div``;
+export const RightSide = styled.div``;
 
 export const Icon = styled.img`
-  height: 32px;
-  width: 32px;
-  margin-right: ${({ noMargin }) => (noMargin ? "0" : "32px")};
+  height: 16px;
+  width: 16px;
+  margin-right: ${({ noMargin }) => (noMargin ? "0" : "7px")};
   cursor: pointer;
+  @media (min-width: 576) {
+    height: 24px;
+    width: 24px;
+    margin-right: ${({ noMargin }) => (noMargin ? "0" : "20px")};
+  }
+  @media (min-width: 768px) {
+    height: 28px;
+    width: 28px;
+    margin-right: ${({ noMargin }) => (noMargin ? "0" : "28px")};
+  }
+  @media (min-width: 868px) {
+    height: 32px;
+    width: 32px;
+    margin-right: ${({ noMargin }) => (noMargin ? "0" : "32px")};
+  }
 `;
 
 export const Logo = styled.img`
-  height: 21px;
-  width: 142px;
-  margin-bottom: 5px;
+  height: 10px;
+  width: 75px;
+  margin-bottom: 3px;
   cursor: pointer;
+  @media (min-width: 576px) {
+    height: 16px;
+    width: 100px;
+    margin-bottom: 0px;
+  }
+  @media (min-width: 768px) {
+    height: 21px;
+    width: 142px;
+    margin-bottom: 5px;
+  }
 `;
 
 export const ContactSupport = styled.div`
   display: flex;
-  margin-right: 32px;
+  margin-right: 7px;
   float: left;
+  @media (min-width: 576px) {
+    margin-right: 20px;
+  }
+  @media (min-width: 768px) {
+    margin-right: 28px;
+  }
+  @media (min-width: 868px) {
+    margin-right: 32px;
+  }
 `;
 
 export const Text = styled.div`
+  display: none;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 30px;
   color: #4a4a4a;
   padding-left: 10px;
+  @media (min-width: 868px) {
+    display: block;
+  }
 `;

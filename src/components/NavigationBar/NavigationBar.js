@@ -9,11 +9,11 @@ import power_settings from "../../assets/icons/power_settings.svg";
 
 const NavigationBar = () => (
   <S.Wrapper>
-    <S.Left>
+    <S.LeftSide>
       <S.Icon src={menu_link}></S.Icon>
       <S.Logo src={logo}></S.Logo>
-    </S.Left>
-    <S.Right>
+    </S.LeftSide>
+    <S.RightSide>
       <S.ContactSupport>
         <S.Icon noMargin src={contact_support}></S.Icon>
         <S.Text> Contact Support</S.Text>
@@ -21,7 +21,7 @@ const NavigationBar = () => (
       <S.Icon src={active}></S.Icon>
       <S.Icon src={user}></S.Icon>
       <S.Icon noMargin src={power_settings}></S.Icon>
-    </S.Right>
+    </S.RightSide>
   </S.Wrapper>
 );
 
