@@ -20,7 +20,7 @@ export const Icon = styled.img`
   width: 16px;
   margin-right: ${({ noMargin }) => (noMargin ? "0" : "7px")};
   cursor: pointer;
-  @media (min-width: 576) {
+  @media (min-width: 576px) {
     height: 24px;
     width: 24px;
     margin-right: ${({ noMargin }) => (noMargin ? "0" : "20px")};

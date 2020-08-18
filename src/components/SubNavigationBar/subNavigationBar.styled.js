@@ -1,54 +1,86 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
+  margin-bottom: 0;
   display: flex;
-  flex-direction: row;
-  white-space: normal;
+  justify-content: initial;
+  flex-wrap: wrap;
+  color: #f8f8f8;
+  font-family: "Roboto", sans-serif;
+  padding: 15px 0;
+  @media (min-width: 576px) {
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
 `;
 export const LeftSide = styled.div`
   display: flex;
+  margin-bottom: 25px;
+  @media (min-width: 868px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const RightSide = styled.div`
   display: flex;
+  margin-bottom: 25px;
+  @media (min-width: 868px) {
+    margin-bottom: 0;
+  }
 `;
 
 export const SeparatingBorder = styled.div`
-  border: 1px solid #e6e6e6;
-  transform: rotate(90deg);
-  width: 44px;
-  height: 0px;
-  margin-top: 20px;
+  border-left: 2px solid #e6e6e6;
+  height: auto;
 `;
 
 export const Icon = styled.img`
-  height: 32px;
-  width: 32px;
+  height: 24px;
+  width: 24px;
   margin-right: 15px;
   cursor: pointer;
+  @media (min-width: 576px) {
+    height: 32px;
+    width: 32px;
+  }
 `;
 
 export const Applicants = styled.div`
   font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 18px;
+  line-height: 22px;
   color: #4a4a4a;
+  @media (min-width: 576px) {
+    font-size: 24px;
+    line-height: 32px;
+  }
 `;
 
 export const SubNavUnit = styled.div`
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
+  @media (min-width: 576px) {
+    margin: 0 15px;
+  }
+  @media (min-width: 868px) {
+    margin: 0 25px;
+  }
 `;
 
 export const NumberUnit = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 12px;
+  line-height: 18px;
   text-align: center;
   color: #4a4a4a;
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
   @media (min-width: 868px) {
     font-size: 20px;
     line-height: 24px;
@@ -59,9 +91,21 @@ export const TextUnit = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 10px;
-  line-height: 16px;
+  line-height: 14px;
   text-align: center;
   color: #4a4a4a;
+  width: 27px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  @media (min-width: 768px) {
+    width: initial;
+    white-space: normal;
+    overflow: initial;
+    text-overflow: initial;
+    font-size: 12px;
+    line-height: 16px;
+  }
   @media (min-width: 868px) {
     font-size: 14px;
     line-height: 20px;

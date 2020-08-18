@@ -1,10 +1,10 @@
 import React from "react";
 import * as S from "./subNavigationBar.styled";
-import * as C from "../NavigationBar/navigationBar.styled";
 import back from "../../assets/icons/back.svg";
+import applicants from "../../applicants.json";
 
 const SubNavigationBar = () => (
-  <C.Wrapper noMargin>
+  <S.Container noMargin>
     <S.LeftSide>
       <S.Icon noMargin src={back}></S.Icon>
       <S.Applicants>Applicants</S.Applicants>
@@ -12,7 +12,7 @@ const SubNavigationBar = () => (
 
     <S.RightSide>
       <S.SubNavUnit>
-        <S.NumberUnit>25</S.NumberUnit>
+        <S.NumberUnit>{applicants.length}</S.NumberUnit>
         <S.TextUnit>Total</S.TextUnit>
       </S.SubNavUnit>
 
@@ -34,7 +34,7 @@ const SubNavigationBar = () => (
 
       <S.SubNavUnit>
         <S.NumberUnit>3</S.NumberUnit>
-        <S.TextUnit>Appointment</S.TextUnit>
+        <S.TextUnit>Appointments</S.TextUnit>
       </S.SubNavUnit>
 
       <S.SeparatingBorder />
@@ -43,9 +43,8 @@ const SubNavigationBar = () => (
         <S.NumberUnit>4</S.NumberUnit>
         <S.TextUnit>Other</S.TextUnit>
       </S.SubNavUnit>
-      <S.SeparatingBorder />
     </S.RightSide>
-  </C.Wrapper>
+  </S.Container>
 );
 
 export default SubNavigationBar;
