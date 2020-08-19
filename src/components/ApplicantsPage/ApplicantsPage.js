@@ -4,10 +4,11 @@ import * as S from "./applicantsPage.styled";
 import SubNavigationBar from "../SubNavigationBar/SubNavigationBar";
 import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
 import search from "../../assets/icons/search.svg";
+import InfoCard from "../InfoCard/InfoCard";
 import applicants from "../../applicants.json";
 // import { getUserInitials } from "../../shared";
 
-const ApplicantsPage = ({}) => {
+const ApplicantsPage = ({ name, phone, email, status }) => {
   // const [searchTerm, setSearchTerm] = useState("");
   // const [searchResults, setSearchResults] = useState([]);
 
@@ -46,15 +47,17 @@ const ApplicantsPage = ({}) => {
           </S.DropdownButton>
         </S.DropdownFilters>
       </S.SearchBarContent>
+
       <S.CategoryTitle>Appointment set</S.CategoryTitle>
       <S.Grid>
-        <S.Card>
-          <S.UserInitials>FH</S.UserInitials>
-          <S.UserName>Friedrich Heinrich</S.UserName>
-          <S.UserPhone>+49 17398470267</S.UserPhone>
-          <S.UserEmail>friedlich.heinrich@gmail.com</S.UserEmail>
-          <S.ApplicantLabel>Appointment 22 September 2020</S.ApplicantLabel>
-        </S.Card>
+        {applicants.map((applicant) => (
+          <InfoCard
+            name={applicant.name}
+            phone={applicant.phone}
+            email={applicant.email}
+            status={applicant.status}
+          />
+        ))}
       </S.Grid>
     </S.Wrapper>
   );
