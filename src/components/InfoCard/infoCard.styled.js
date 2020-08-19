@@ -1,16 +1,20 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  min-height: 305px;
-  min-height: 241px;
+  min-width: 244px;
+  min-height: 193px;
   border-radius: 2px;
   border: 1px solid #e6e6e6;
-  /* box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11); */
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
   background-color: #ffffff;
   float: left;
   padding: 32px;
   display: flex;
   flex-direction: column;
+  @media (min-width: 576px) {
+    min-width: 305px;
+    min-height: 241px;
+  }
 `;
 
 export const UserInitials = styled.div`

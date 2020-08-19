@@ -11,29 +11,32 @@ export const Wrapper = styled.div`
 
 export const SearchBarContent = styled.div`
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 `;
 
 export const SearchBar = styled.div`
-  width: 160px;
-  height: 24px;
+  min-width: 140px;
+  min-height: 24px;
   display: flex;
   border: 1px solid #e6e6e6;
   border-radius: 4px;
   @media (min-width: 576px) {
-    width: 200px;
-    height: 26px;
+    min-width: 200px;
+    min-height: 26px;
   }
   @media (min-width: 768px) {
-    width: 305px;
-    height: 45px;
+    min-width: 305px;
+    min-height: 45px;
   }
 `;
 
 export const SearchIcon = styled.img`
-  width: 25px;
+  width: 16px;
   right: auto;
-  margin-left: 20px;
+  margin-left: 10px;
+  @media (min-width: 768px) {
+    width: 25px;
+  }
 `;
 
 export const Input = styled.input`
@@ -63,6 +66,22 @@ export const DropdownFilters = styled.div`
   text-align: center;
   @media (min-width: 576px) {
     margin-left: 30px;
+  }
+  .dropdown-button {
+    background: #fff !important;
+    width: 80px;
+    height: 49px;
+  }
+  .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    span {
+      font-family: "Roboto", sans-serif;
+      color: #9d9d9d !important;
+      text-decoration: none !important;
+      border: 0 !important;
+      text-align: center;
+    }
   }
 `;
 

@@ -24,8 +24,10 @@ export const LeftSide = styled.div`
 export const RightSide = styled.div`
   display: flex;
   margin-bottom: 25px;
+  overflow-x: auto;
   @media (min-width: 868px) {
     margin-bottom: 0;
+    overflow-x: initial;
   }
 `;
 
@@ -73,15 +75,11 @@ export const SubNavUnit = styled.div`
 export const NumberUnit = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 22px;
   text-align: center;
   color: #4a4a4a;
   @media (min-width: 768px) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-  @media (min-width: 868px) {
     font-size: 20px;
     line-height: 24px;
   }
@@ -90,23 +88,11 @@ export const NumberUnit = styled.div`
 export const TextUnit = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 10px;
-  line-height: 14px;
+  font-size: 12px;
+  line-height: 16px;
   text-align: center;
   color: #4a4a4a;
-  width: 27px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   @media (min-width: 768px) {
-    width: initial;
-    white-space: normal;
-    overflow: initial;
-    text-overflow: initial;
-    font-size: 12px;
-    line-height: 16px;
-  }
-  @media (min-width: 868px) {
     font-size: 14px;
     line-height: 20px;
   }

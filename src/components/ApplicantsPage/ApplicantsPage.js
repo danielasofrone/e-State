@@ -6,9 +6,10 @@ import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
 import search from "../../assets/icons/search.svg";
 import InfoCard from "../InfoCard/InfoCard";
 import applicants from "../../applicants.json";
+import Dropdown from "react-bootstrap/Dropdown";
 // import { getUserInitials } from "../../shared";
 
-const ApplicantsPage = ({ name, phone, email, status }) => {
+const ApplicantsPage = () => {
   // const [searchTerm, setSearchTerm] = useState("");
   // const [searchResults, setSearchResults] = useState([]);
 
@@ -37,6 +38,53 @@ const ApplicantsPage = ({ name, phone, email, status }) => {
           />
         </S.SearchBar>
         <S.DropdownFilters>
+          <Dropdown>
+            <Dropdown.Toggle
+              className="dropdown-button"
+              variant="info"
+              id="dropdown-basic"
+            >
+              <div>Bids</div>
+              <S.Icon noMargin src={arrow_drop_down}></S.Icon>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="dropdown-menu">
+              <Dropdown.Item>
+                <span>bids</span>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <span>bids</span>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <span>bids</span>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+
+          <Dropdown>
+            <Dropdown.Toggle
+              className="dropdown-button"
+              variant="info"
+              id="dropdown-basic"
+            >
+              <div>Status</div>
+              <S.Icon noMargin src={arrow_drop_down}></S.Icon>
+            </Dropdown.Toggle>
+
+            <Dropdown.Menu className="dropdown-menu">
+              <Dropdown.Item>
+                <span>Status</span>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <span>Status</span>
+              </Dropdown.Item>
+              <Dropdown.Item>
+                <span>Status</span>
+              </Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
+        </S.DropdownFilters>
+        {/* <S.DropdownFilters>
           <S.DropdownButton>
             <S.DropdownText>Bids</S.DropdownText>
             <S.Icon noMargin src={arrow_drop_down}></S.Icon>
@@ -45,7 +93,7 @@ const ApplicantsPage = ({ name, phone, email, status }) => {
             <S.DropdownText>Status</S.DropdownText>
             <S.Icon noMargin src={arrow_drop_down}></S.Icon>
           </S.DropdownButton>
-        </S.DropdownFilters>
+        </S.DropdownFilters> */}
       </S.SearchBarContent>
 
       <S.CategoryTitle>Appointment set</S.CategoryTitle>
