@@ -1,41 +1,91 @@
-import React from "react";
+import React, { useCallback } from "react";
 import * as S from "./applicantsPage.styled";
-// import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import SubNavigationBar from "../SubNavigationBar/SubNavigationBar";
 import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
-import search from "../../assets/icons/search.svg";
+import searchIcon from "../../assets/icons/search.svg";
 import InfoCard from "../InfoCard/InfoCard";
-import applicants from "../../applicants.json";
 import Dropdown from "react-bootstrap/Dropdown";
+import axios from "axios";
+import { withRouter } from "react-router-dom";
 // import { getUserInitials } from "../../shared";
 
-const ApplicantsPage = () => {
-  // const [searchTerm, setSearchTerm] = useState("");
-  // const [searchResults, setSearchResults] = useState([]);
+const statusList = [
+  { name: "Appointment_Set", title: "Appointment Set" },
+  { name: "Property_Viewed", title: "Property Viewed" },
+  { name: "Interested", title: "Interested" },
+  { name: "Offer_Accepted", title: "Offer Accepted" },
+];
 
-  // const handleChange = (event) => {
-  //   setSearchTerm(event.target.value);
-  // };
+const ApplicantsPage = ({ location: { search } }) => {
+  const [applicants, setApplicants] = useState({
+    status: "loading",
+    data: [],
+    filteredData: [],
+  });
 
-  // useEffect(() => {
-  //   const results = applicants.filter((applicant) =>
-  //     applicant.toLowerCase().includes(searchTerm)
-  //   );
-  //   setSearchResults(results);
-  // }, [searchTerm]);
+  const filterApplicantsByStatus = useCallback((data, userStatus) => {
+    let filteredData = data.filter(({ status }) => status === userStatus);
+
+    return filteredData;
+  }, []);
+
+  const filterApplicantsOnSearch = useCallback((data, query) => {
+    let filteredData = data.filter(
+      ({ name, email }) =>
+        name.toLowerCase().includes(query.toLowerCase()) ||
+        email.toLowerCase().includes(query.toLowerCase())
+    );
+
+    if (query === "") filteredData = data;
+
+    return filteredData;
+  }, []);
+
+  useEffect(() => {
+    const query = new URLSearchParams(search);
+
+    axios.get("http://localhost:3000/api/applicants.json").then((res) => {
+      let filteredData = res.data;
+
+      if (query.get("search"))
+        filteredData = filterApplicantsOnSearch(res.data, query.get("search"));
+
+      setApplicants({
+        status: "finished",
+        data: res.data,
+        filteredData,
+      });
+    });
+  }, [filterApplicantsOnSearch, search]);
+
+  const onChangeSearchField = ({ target: { value } }) => {
+    const filteredData = filterApplicantsOnSearch(applicants.data, value);
+
+    setApplicants({
+      ...applicants,
+      status: "finished",
+      filteredData,
+    });
+  };
 
   return (
     <S.Wrapper>
-      <SubNavigationBar />
+      <SubNavigationBar
+        loading={applicants.status === "loading"}
+        applicants={applicants.data}
+      />
       <S.SearchBarContent>
         <S.SearchBar>
-          <S.SearchIcon src={search}></S.SearchIcon>
-          <S.Input
-            type="text"
-            placeholder="Search for applicant"
-            // value={searchTerm}
-            // onChange={handleChange}
-          />
+          <S.SearchIcon src={searchIcon}></S.SearchIcon>
+          <form>
+            <S.Input
+              type="text"
+              placeholder="Search for applicant"
+              name="search"
+              onChange={onChangeSearchField}
+            />
+          </form>
         </S.SearchBar>
         <S.DropdownFilters>
           <Dropdown>
@@ -96,19 +146,27 @@ const ApplicantsPage = () => {
         </S.DropdownFilters> */}
       </S.SearchBarContent>
 
-      <S.CategoryTitle>Appointment set</S.CategoryTitle>
-      <S.Grid>
-        {applicants.map((applicant) => (
-          <InfoCard
-            name={applicant.name}
-            phone={applicant.phone}
-            email={applicant.email}
-            status={applicant.status}
-          />
-        ))}
-      </S.Grid>
+      {statusList.map((statusItem) => (
+        <div key={statusItem.name}>
+          <S.CategoryTitle>{statusItem.title}</S.CategoryTitle>
+          <S.Grid>
+            {filterApplicantsByStatus(
+              applicants.filteredData,
+              statusItem.name
+            ).map((applicant) => (
+              <InfoCard
+                key={applicant.name}
+                name={applicant.name}
+                phone={applicant.phone}
+                email={applicant.email}
+                status={applicant.status}
+              />
+            ))}
+          </S.Grid>
+        </div>
+      ))}
     </S.Wrapper>
   );
 };
 
-export default ApplicantsPage;
+export default withRouter(ApplicantsPage);

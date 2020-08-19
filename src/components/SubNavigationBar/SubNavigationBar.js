@@ -1,9 +1,10 @@
 import React from "react";
 import * as S from "./subNavigationBar.styled";
 import back from "../../assets/icons/back.svg";
-import applicants from "../../applicants.json";
+// import applicants from "../../applicants.json";
 
-const SubNavigationBar = () => {
+const SubNavigationBar = ({ applicants, loading }) => {
+  if (loading) return "loading";
   return (
     <S.Container noMargin>
       <S.LeftSide>
@@ -20,9 +21,9 @@ const SubNavigationBar = () => {
         <S.SeparatingBorder />
 
         <S.SubNavUnit>
-          {applicants.status === "Interested" && (
-            <S.NumberUnit>{applicants.status.length}</S.NumberUnit>
-          )}
+          <S.NumberUnit>
+            {applicants.filter(({ status }) => status === "Interested").length}
+          </S.NumberUnit>
 
           <S.TextUnit>New</S.TextUnit>
         </S.SubNavUnit>
