@@ -41,9 +41,11 @@ export const Icon = styled.img`
   width: 24px;
   margin-right: 15px;
   cursor: pointer;
+  margin-top: 7px;
   @media (min-width: 576px) {
     height: 32px;
     width: 32px;
+    margin-top: 0;
   }
 `;
 
@@ -52,8 +54,9 @@ export const Applicants = styled.div`
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 30px;
   color: #4a4a4a;
+  margin-right: 20px;
   @media (min-width: 576px) {
     font-size: 24px;
     line-height: 32px;

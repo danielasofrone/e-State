@@ -1,7 +1,6 @@
 import React from "react";
 import * as S from "./subNavigationBar.styled";
 import back from "../../assets/icons/back.svg";
-// import applicants from "../../applicants.json";
 
 const SubNavigationBar = ({ applicants, loading }) => {
   if (loading) return "loading";
@@ -31,21 +30,36 @@ const SubNavigationBar = ({ applicants, loading }) => {
         <S.SeparatingBorder />
 
         <S.SubNavUnit>
-          <S.NumberUnit>5 </S.NumberUnit>
+          <S.NumberUnit>
+            {
+              applicants.filter(({ status }) => status === "Property_Viewed")
+                .length
+            }
+          </S.NumberUnit>
           <S.TextUnit>Views</S.TextUnit>
         </S.SubNavUnit>
 
         <S.SeparatingBorder />
 
         <S.SubNavUnit>
-          <S.NumberUnit>3</S.NumberUnit>
+          <S.NumberUnit>
+            {
+              applicants.filter(({ status }) => status === "Appointment_Set")
+                .length
+            }
+          </S.NumberUnit>
           <S.TextUnit>Appointments</S.TextUnit>
         </S.SubNavUnit>
 
         <S.SeparatingBorder />
 
         <S.SubNavUnit>
-          <S.NumberUnit>4</S.NumberUnit>
+          <S.NumberUnit>
+            {
+              applicants.filter(({ status }) => status === "Offer_Accepted")
+                .length
+            }
+          </S.NumberUnit>
           <S.TextUnit>Other</S.TextUnit>
         </S.SubNavUnit>
       </S.RightSide>

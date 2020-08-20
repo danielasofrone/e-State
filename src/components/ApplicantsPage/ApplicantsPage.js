@@ -3,9 +3,7 @@ import * as S from "./applicantsPage.styled";
 import { useState, useEffect } from "react";
 import SubNavigationBar from "../SubNavigationBar/SubNavigationBar";
 import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
-import searchIcon from "../../assets/icons/search.svg";
 import InfoCard from "../InfoCard/InfoCard";
-import Dropdown from "react-bootstrap/Dropdown";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
 // import { getUserInitials } from "../../shared";
@@ -76,74 +74,23 @@ const ApplicantsPage = ({ location: { search } }) => {
         applicants={applicants.data}
       />
       <S.SearchBarContent>
-        <S.SearchBar>
-          <S.SearchIcon src={searchIcon}></S.SearchIcon>
-          <form>
-            <S.Input
-              type="text"
-              placeholder="Search for applicant"
-              name="search"
-              onChange={onChangeSearchField}
-            />
-          </form>
-        </S.SearchBar>
+        <form>
+          <S.Input
+            type="text"
+            placeholder="Search for applicant"
+            name="search"
+            onChange={onChangeSearchField}
+          />
+        </form>
+
         <S.DropdownFilters>
-          <Dropdown>
-            <Dropdown.Toggle
-              className="dropdown-button"
-              variant="info"
-              id="dropdown-basic"
-            >
-              <div>Bids</div>
-              <S.Icon noMargin src={arrow_drop_down}></S.Icon>
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu className="dropdown-menu">
-              <Dropdown.Item>
-                <span>bids</span>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <span>bids</span>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <span>bids</span>
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
-
-          <Dropdown>
-            <Dropdown.Toggle
-              className="dropdown-button"
-              variant="info"
-              id="dropdown-basic"
-            >
-              <div>Status</div>
-              <S.Icon noMargin src={arrow_drop_down}></S.Icon>
-            </Dropdown.Toggle>
-
-            <Dropdown.Menu className="dropdown-menu">
-              <Dropdown.Item>
-                <span>Status</span>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <span>Status</span>
-              </Dropdown.Item>
-              <Dropdown.Item>
-                <span>Status</span>
-              </Dropdown.Item>
-            </Dropdown.Menu>
-          </Dropdown>
+          <S.DropdownButton>
+            <S.DropdownText>Bids &#9662;</S.DropdownText>
+          </S.DropdownButton>
+          <S.DropdownButton>
+            <S.DropdownText>Status &#9662;</S.DropdownText>
+          </S.DropdownButton>
         </S.DropdownFilters>
-        {/* <S.DropdownFilters>
-          <S.DropdownButton>
-            <S.DropdownText>Bids</S.DropdownText>
-            <S.Icon noMargin src={arrow_drop_down}></S.Icon>
-          </S.DropdownButton>
-          <S.DropdownButton>
-            <S.DropdownText>Status</S.DropdownText>
-            <S.Icon noMargin src={arrow_drop_down}></S.Icon>
-          </S.DropdownButton>
-        </S.DropdownFilters> */}
       </S.SearchBarContent>
 
       {statusList.map((statusItem) => (
@@ -159,7 +106,7 @@ const ApplicantsPage = ({ location: { search } }) => {
                 name={applicant.name}
                 phone={applicant.phone}
                 email={applicant.email}
-                status={applicant.status}
+                last_update={applicant.last_update}
               />
             ))}
           </S.Grid>

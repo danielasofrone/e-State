@@ -4,7 +4,7 @@
     "phone": "+49 17398470267",
     "email": "friedlich.heinrich@gmail.com",
     "status": "Appointment_Set",
-    "bid": "2500000",
+    "bid": "",
     "last_update": "2020-08-20T12:00:27.87+00:20"
   },
   {
@@ -28,7 +28,7 @@
     "phone": "+49 17398470267",
     "email": "christian.bosch@gmail.com",
     "status": "Appointment_Set",
-    "bid": "3400000",
+    "bid": "",
     "last_update": "2020-08-20T18:00:27.87+00:20"
   },
   {
@@ -44,7 +44,7 @@
     "phone": "+49 17398470267",
     "email": "marco-klein@gmail.com",
     "status": "Appointment_Set",
-    "bid": "650000",
+    "bid": "",
     "last_update": "2020-10-20T15:00:27.87+00:20"
   },
   {
@@ -108,7 +108,7 @@
     "phone": "+49 17398470267",
     "email": "b.wechsler@gmail.com",
     "status": "Appointment_Set",
-    "bid": "890000",
+    "bid": "",
     "last_update": "2020-08-20T15:00:27.87+00:20"
   },
   {
@@ -124,7 +124,7 @@
     "phone": "+49 17398470267",
     "email": "u.wolf@gmail.com",
     "status": "Appointment_Set",
-    "bid": "900000",
+    "bid": "",
     "last_update": "2020-09-05T12:00:27.87+00:20"
   },
   {
@@ -148,7 +148,7 @@
     "phone": "+49 17398470267",
     "email": "friedlich.heinrich@gmail.com",
     "status": "Appointment_Set",
-    "bid": "390000",
+    "bid": "",
     "last_update": "2020-09-06T12:00:27.87+00:20"
   },
   {
@@ -156,7 +156,7 @@
     "phone": "+49 17398470267",
     "email": "max.krueger@gmail.com",
     "status": "Appointment_Set",
-    "bid": "720000",
+    "bid": "",
     "last_update": "2020-10-09T13:00:27.87+00:20"
   }
 ]

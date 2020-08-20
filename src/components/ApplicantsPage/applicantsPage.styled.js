@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import search from "../../assets/icons/search.svg";
 
 export const Wrapper = styled.div`
   height: auto;
@@ -14,38 +15,23 @@ export const SearchBarContent = styled.div`
   flex-wrap: wrap;
 `;
 
-export const SearchBar = styled.div`
-  min-width: 140px;
-  min-height: 24px;
-  display: flex;
-  border: 1px solid #e6e6e6;
-  border-radius: 4px;
-  @media (min-width: 576px) {
-    min-width: 200px;
-    min-height: 26px;
-  }
-  @media (min-width: 768px) {
-    min-width: 305px;
-    min-height: 45px;
-  }
-`;
-
-export const SearchIcon = styled.img`
-  width: 16px;
-  right: auto;
-  margin-left: 10px;
-  @media (min-width: 768px) {
-    width: 25px;
-  }
-`;
-
 export const Input = styled.input`
+  width: 200px;
+  height: 100%;
+  padding: 2px;
+  background-image: url(/static/media/search.3ddbd4b3.svg);
+  background-repeat: no-repeat;
+  text-indent: 35px;
+  background-position: left 10px center;
+  border: 1px solid #e6e6e6;
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   color: #9d9d9d;
-  padding: 5px 0;
-  border: none;
-
+  @media (min-width: 576px) {
+    width: 305px;
+    text-indent: 40px;
+    padding: 0;
+  }
   ::placeholder {
     font-family: "Roboto", sans-serif;
     color: #9d9d9d;
@@ -87,7 +73,7 @@ export const DropdownFilters = styled.div`
 
 export const DropdownButton = styled.div`
   width: 30px;
-  height: 28px;
+  height: 32px;
   background: #ffffff;
   border: 1px solid #e6e6e6;
   box-sizing: border-box;
@@ -95,10 +81,11 @@ export const DropdownButton = styled.div`
   margin-right: 10px;
   display: flex;
   justify-content: center;
+  cursor: pointer;
 
   @media (min-width: 576px) {
     width: 40px;
-    height: 32px;
+    height: 34px;
   }
   @media (min-width: 768px) {
     width: 80px;

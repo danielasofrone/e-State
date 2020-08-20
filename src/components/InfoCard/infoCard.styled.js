@@ -22,13 +22,12 @@ export const UserInitials = styled.div`
   font-weight: bold;
   width: 60px;
   height: 60px;
-  background-color: #e3e7f9;
   border-radius: 50%;
   display: flex;
   margin: 0 auto 10px auto;
   justify-content: center;
   align-items: center;
-  color: #405493;
+  color: #fff;
   font-size: 14;
 `;
 
