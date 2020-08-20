@@ -6,7 +6,6 @@ import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
 import InfoCard from "../InfoCard/InfoCard";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
-// import { getUserInitials } from "../../shared";
 
 const statusList = [
   { name: "Appointment_Set", title: "Appointment Set" },
@@ -107,6 +106,7 @@ const ApplicantsPage = ({ location: { search } }) => {
                 phone={applicant.phone}
                 email={applicant.email}
                 last_update={applicant.last_update}
+                bid={applicant.bid}
               />
             ))}
           </S.Grid>

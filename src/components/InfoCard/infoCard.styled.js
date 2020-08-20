@@ -61,7 +61,7 @@ export const UserEmail = styled.div`
   margin-bottom: 10px;
 `;
 
-export const ApplicantLabel = styled.div`
+export const DateLabel = styled.div`
   min-width: 165px;
   height: 20px;
   text-align: center;
@@ -76,4 +76,21 @@ export const ApplicantLabel = styled.div`
   background: #9d9d9d;
   border-radius: 3px;
   margin: 0 auto;
+`;
+
+export const BidLabel = styled.div`
+  min-width: 165px;
+  height: 20px;
+  text-align: center;
+  padding: 3px 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 1px solid #efefef;
+  background: #feb902;
+  border-radius: 3px;
+  margin: 10px auto 0 auto;
 `;
