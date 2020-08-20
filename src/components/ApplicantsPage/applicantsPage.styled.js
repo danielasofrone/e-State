@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import search from "../../assets/icons/search.svg";
+import search from "../../assets/icons/search.svg";
 
 export const Wrapper = styled.div`
   height: auto;
@@ -19,7 +19,7 @@ export const Input = styled.input`
   width: 200px;
   height: 100%;
   padding: 2px;
-  background-image: url(/static/media/search.3ddbd4b3.svg);
+  background-image: url(/icons/search.svg);
   background-repeat: no-repeat;
   text-indent: 35px;
   background-position: left 10px center;

@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./infoCard.styled";
 import PropTypes from "prop-types";
 import moment from "moment";
-import { getRandomColor, getInitials } from "../../shared";
+import { getRandomColor, getInitials } from "../utils/shared";
 
 const InfoCard = ({
   name,

@@ -41,18 +41,23 @@ const ApplicantsPage = ({ location: { search } }) => {
   useEffect(() => {
     const query = new URLSearchParams(search);
 
-    axios.get("http://localhost:3000/api/applicants.json").then((res) => {
-      let filteredData = res.data;
+    axios
+      .get("https://e-state-df441.web.app/api/applicants.json")
+      .then((res) => {
+        let filteredData = res.data;
 
-      if (query.get("search"))
-        filteredData = filterApplicantsOnSearch(res.data, query.get("search"));
+        if (query.get("search"))
+          filteredData = filterApplicantsOnSearch(
+            res.data,
+            query.get("search")
+          );
 
-      setApplicants({
-        status: "finished",
-        data: res.data,
-        filteredData,
+        setApplicants({
+          status: "finished",
+          data: res.data,
+          filteredData,
+        });
       });
-    });
   }, [filterApplicantsOnSearch, search]);
 
   const onChangeSearchField = ({ target: { value } }) => {
