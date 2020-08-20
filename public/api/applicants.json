@@ -5,7 +5,8 @@
     "email": "friedlich.heinrich@gmail.com",
     "status": "Appointment_Set",
     "bid": "",
-    "last_update": "2020-08-20T12:00:27.87+00:20"
+    "appointment_date": "2020-08-20T12:00:27.87+00:20",
+    "viewed_date": ""
   },
   {
     "name": "Hans Ulrich",
@@ -13,7 +14,8 @@
     "email": "hans-ulrich@gmail.com",
     "status": "Property_Viewed",
     "bid": "223.0000",
-    "last_update": "2020-09-20T12:00:27.87+00:20"
+    "viewed_date": "2020-09-20T12:00:27.87+00:20",
+    "appointment_date": ""
   },
   {
     "name": "Karlheinz Brandenburg",
@@ -21,7 +23,8 @@
     "email": "karlheinzbrandenburg@gmail.com",
     "status": "Interested",
     "bid": "560.0000",
-    "last_update": "2020-08-25T12:00:27.87+00:20"
+    "viewed_date": "",
+    "appointment_date": ""
   },
   {
     "name": "Christin Bosch",
@@ -29,7 +32,8 @@
     "email": "christian.bosch@gmail.com",
     "status": "Appointment_Set",
     "bid": "",
-    "last_update": "2020-08-20T18:00:27.87+00:20"
+    "appointment_date": "2020-08-20T18:00:27.87+00:20",
+    "viewed_date": ""
   },
   {
     "name": "Klaus Muller",
@@ -37,7 +41,8 @@
     "email": "klaus.muller@gmail.com",
     "status": "Interested",
     "bid": "700.000",
-    "last_update": "2020-08-15T16:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": ""
   },
   {
     "name": "Marco Klein",
@@ -45,7 +50,8 @@
     "email": "marco-klein@gmail.com",
     "status": "Appointment_Set",
     "bid": "",
-    "last_update": "2020-10-20T15:00:27.87+00:20"
+    "appointment_date": "2020-10-09T13:00:27.87+00:20",
+    "viewed_date": ""
   },
   {
     "name": "Katja Gottlieb",
@@ -53,7 +59,8 @@
     "email": "katja_gottlieb@gmail.com",
     "status": "Property_Viewed",
     "bid": "560.000",
-    "last_update": "2020-08-30T13:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": "2020-10-09T13:00:27.87+00:20"
   },
   {
     "name": "Erik Meier",
@@ -61,7 +68,8 @@
     "email": "eric-meier@gmail.com",
     "status": "Interested",
     "bid": "450.000",
-    "last_update": "2020-08-29T14:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": ""
   },
   {
     "name": "Anja Sommer",
@@ -69,7 +77,8 @@
     "email": "anja-sommer@gmail.com",
     "status": "Property_Viewed",
     "bid": "740.000",
-    "last_update": "2020-08-20T17:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": "2020-10-09T13:00:27.87+00:20"
   },
   {
     "name": "Stephan Lang",
@@ -77,7 +86,8 @@
     "email": "s.lang@gmail.com",
     "status": "Property_Viewed",
     "bid": "360.000",
-    "last_update": "2020-08-19T18:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": "2020-10-09T13:00:27.87+00:20"
   },
   {
     "name": "Dominik Herrmann",
@@ -85,7 +95,8 @@
     "email": "dominikhermann@gmail.com",
     "status": "Offer_Accepted",
     "bid": "510.000",
-    "last_update": "2020-09-03T12:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": ""
   },
   {
     "name": "Julianne Nussbaum",
@@ -93,7 +104,8 @@
     "email": "juli.nussbaum@gmail.com",
     "status": "Offer_Accepted",
     "bid": "220.000",
-    "last_update": "2020-08-26T12:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": ""
   },
   {
     "name": "Christian Wexler",
@@ -101,7 +113,8 @@
     "email": "christian.wex@gmail.com",
     "status": "Property_Viewed",
     "bid": "900.000",
-    "last_update": "2020-08-28T12:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": "2020-10-09T13:00:27.87+00:20"
   },
   {
     "name": "Barbara Wechsler",
@@ -109,7 +122,8 @@
     "email": "b.wechsler@gmail.com",
     "status": "Appointment_Set",
     "bid": "",
-    "last_update": "2020-08-20T15:00:27.87+00:20"
+    "appointment_date": "2020-10-09T13:00:27.87+00:20",
+    "viewed_date": ""
   },
   {
     "name": "Dennis Becker",
@@ -117,7 +131,8 @@
     "email": "dennis.b@gmail.com",
     "status": "Property_Viewed",
     "bid": "670.000",
-    "last_update": "2020-08-15T12:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": "2020-10-09T13:00:27.87+00:20"
   },
   {
     "name": "Ulrike Wolf",
@@ -125,7 +140,8 @@
     "email": "u.wolf@gmail.com",
     "status": "Appointment_Set",
     "bid": "",
-    "last_update": "2020-09-05T12:00:27.87+00:20"
+    "appointment_date": "2020-10-09T13:00:27.87+00:20",
+    "viewed_date": ""
   },
   {
     "name": "Johann Wirth",
@@ -133,7 +149,8 @@
     "email": "johann.wirth@gmail.com",
     "status": "Offer_Accepted",
     "bid": "530.000",
-    "last_update": "2020-08-22T12:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": ""
   },
   {
     "name": "Julian Traugott",
@@ -141,15 +158,16 @@
     "email": "j.traugott@gmail.com",
     "status": "Offer_Accepted",
     "bid": "710.000",
-    "last_update": "2020-08-23T13:00:27.87+00:20"
+    "appointment_date": "",
+    "viewed_date": ""
   },
   {
     "name": "Stefan Gerber",
     "phone": "+49 17398470267",
     "email": "friedlich.heinrich@gmail.com",
     "status": "Appointment_Set",
-    "bid": "",
-    "last_update": "2020-09-06T12:00:27.87+00:20"
+    "appointment_date": "2020-10-09T13:00:27.87+00:20",
+    "viewed_date": ""
   },
   {
     "name": "Max Krüger",
@@ -157,6 +175,7 @@
     "email": "max.krueger@gmail.com",
     "status": "Appointment_Set",
     "bid": "",
-    "last_update": "2020-10-09T13:00:27.87+00:20"
+    "appointment_date": "2020-10-09T13:00:27.87+00:20",
+    "viewed_date": ""
   }
 ]

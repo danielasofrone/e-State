@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import search from "../../assets/icons/search.svg";
+// import search from "../../assets/icons/search.svg";
 
 export const Wrapper = styled.div`
   height: auto;
@@ -53,26 +53,10 @@ export const DropdownFilters = styled.div`
   @media (min-width: 576px) {
     margin-left: 30px;
   }
-  .dropdown-button {
-    background: #fff !important;
-    width: 80px;
-    height: 49px;
-  }
-  .dropdown-menu {
-    display: flex;
-    flex-direction: column;
-    span {
-      font-family: "Roboto", sans-serif;
-      color: #9d9d9d !important;
-      text-decoration: none !important;
-      border: 0 !important;
-      text-align: center;
-    }
-  }
 `;
 
 export const DropdownButton = styled.div`
-  width: 30px;
+  width: 35px;
   height: 32px;
   background: #ffffff;
   border: 1px solid #e6e6e6;
@@ -81,6 +65,7 @@ export const DropdownButton = styled.div`
   margin-right: 10px;
   display: flex;
   justify-content: center;
+  text-align: center;
   cursor: pointer;
 
   @media (min-width: 576px) {
@@ -108,12 +93,6 @@ export const DropdownText = styled.div`
     font-size: 14px;
     line-height: 49px;
   }
-`;
-
-export const Icon = styled.img`
-  width: 16px;
-  height: 16px;
-  line-height: 30px;
 `;
 
 export const CategoryTitle = styled.div`

@@ -2,7 +2,6 @@ import React, { useCallback } from "react";
 import * as S from "./applicantsPage.styled";
 import { useState, useEffect } from "react";
 import SubNavigationBar from "../SubNavigationBar/SubNavigationBar";
-import arrow_drop_down from "../../assets/icons/arrow_drop_down.svg";
 import InfoCard from "../InfoCard/InfoCard";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
@@ -105,7 +104,8 @@ const ApplicantsPage = ({ location: { search } }) => {
                 name={applicant.name}
                 phone={applicant.phone}
                 email={applicant.email}
-                last_update={applicant.last_update}
+                appointment_date={applicant.appointment_date}
+                viewed_date={applicant.viewed_date}
                 bid={applicant.bid}
               />
             ))}
