@@ -5,6 +5,7 @@ import SubNavigationBar from "../SubNavigationBar/SubNavigationBar";
 import InfoCard from "../InfoCard/InfoCard";
 import axios from "axios";
 import { withRouter } from "react-router-dom";
+import { getRandomColor } from "../utils/shared";
 
 const statusList = [
   { name: "Appointment_Set", title: "Appointment Set" },
@@ -41,23 +42,23 @@ const ApplicantsPage = ({ location: { search } }) => {
   useEffect(() => {
     const query = new URLSearchParams(search);
 
-    axios
-      .get("https://e-state-df441.web.app/api/applicants.json")
-      .then((res) => {
-        let filteredData = res.data;
+    axios.get("http://localhost:3000/api/applicants.json").then((res) => {
+      let filteredData = res.data;
 
-        if (query.get("search"))
-          filteredData = filterApplicantsOnSearch(
-            res.data,
-            query.get("search")
-          );
+      for (const data of filteredData) {
+        data.color = getRandomColor();
+      }
+      console.log("Data", filteredData);
 
-        setApplicants({
-          status: "finished",
-          data: res.data,
-          filteredData,
-        });
+      if (query.get("search"))
+        filteredData = filterApplicantsOnSearch(res.data, query.get("search"));
+
+      setApplicants({
+        status: "finished",
+        data: res.data,
+        filteredData,
       });
+    });
   }, [filterApplicantsOnSearch, search]);
 
   const onChangeSearchField = ({ target: { value } }) => {
@@ -112,6 +113,7 @@ const ApplicantsPage = ({ location: { search } }) => {
                 appointment_date={applicant.appointment_date}
                 viewed_date={applicant.viewed_date}
                 bid={applicant.bid}
+                color={applicant.color}
               />
             ))}
           </S.Grid>

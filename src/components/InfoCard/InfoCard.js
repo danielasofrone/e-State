@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./infoCard.styled";
 import PropTypes from "prop-types";
 import moment from "moment";
-import { getRandomColor, getInitials } from "../utils/shared";
+import { getInitials } from "../utils/shared";
 
 const InfoCard = ({
   name,
@@ -11,10 +11,11 @@ const InfoCard = ({
   appointment_date,
   viewed_date,
   bid,
+  color,
 }) => {
   return (
     <S.Card>
-      <S.UserInitials style={{ background: getRandomColor(), opacity: " 0.5" }}>
+      <S.UserInitials style={{ background: color, opacity: " 0.5" }}>
         {getInitials(name)}
       </S.UserInitials>
       <S.UserName>{name}</S.UserName>
@@ -44,6 +45,7 @@ InfoCard.propTypes = {
   appointment_date: PropTypes.string.isRequired,
   viewed_date: PropTypes.string.isRequired,
   bid: PropTypes.string.isRequired,
+  color: PropTypes.string.isRequired,
 };
 
 export default InfoCard;
