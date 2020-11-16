@@ -42,7 +42,7 @@ const ApplicantsPage = ({ location: { search } }) => {
   useEffect(() => {
     const query = new URLSearchParams(search);
 
-    axios.get("http://localhost:3000/api/applicants.json").then((res) => {
+    axios.get("https://e-state-df441.web.app/api/applicants.json").then((res) => {
       let filteredData = res.data;
 
       for (const data of filteredData) {
