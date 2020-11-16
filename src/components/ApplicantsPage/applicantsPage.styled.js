@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import search from "../../assets/icons/search.svg";
 
 export const Wrapper = styled.div`
   height: auto;
@@ -17,7 +16,7 @@ export const SearchBarContent = styled.div`
 
 export const Input = styled.input`
   width: 200px;
-  height: 100%;
+  height: 35px;
   padding: 2px;
   background-image: url(/icons/search.svg);
   background-repeat: no-repeat;
@@ -45,56 +44,6 @@ export const Input = styled.input`
   }
 `;
 
-export const DropdownFilters = styled.div`
-  margin-left: 10px;
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  @media (min-width: 576px) {
-    margin-left: 30px;
-  }
-`;
-
-export const DropdownButton = styled.div`
-  width: 35px;
-  height: 32px;
-  background: #ffffff;
-  border: 1px solid #e6e6e6;
-  box-sizing: border-box;
-  border-radius: 3px;
-  margin-right: 10px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
-
-  @media (min-width: 576px) {
-    width: 40px;
-    height: 34px;
-  }
-  @media (min-width: 768px) {
-    width: 80px;
-    height: 49px;
-    margin-right: 20px;
-  }
-`;
-
-export const DropdownText = styled.div`
-  font-family: "Roboto", sans-serif;
-  font-weight: normal;
-  font-size: 8px;
-  color: #4a4a4a;
-  line-height: 30px;
-  text-align: center;
-  @media (min-width: 576px) {
-    line-height: 32px;
-  }
-  @media (min-width: 768px) {
-    font-size: 14px;
-    line-height: 49px;
-  }
-`;
-
 export const CategoryTitle = styled.div`
   font-family: "Roboto", sans-serif;
   font-weight: bold;
@@ -104,15 +53,14 @@ export const CategoryTitle = styled.div`
   margin: 30px 0;
 `;
 
-export const Grid = styled.div`
-  width: 100%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 25px;
-  margin-top: 20px;
-  overflow-x: auto;
-  @media (min-width: 868px) {
-    grid-template-columns: repeat(3, 1fr);
-    overflow-x: initial;
+export const CardsConatiner = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+
+@media (min-width: 768px) {
+  flex-direction: row;
   }
 `;

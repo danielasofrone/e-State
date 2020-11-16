@@ -1,8 +1,9 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  min-width: 244px;
+  min-width: 220px;
   min-height: 193px;
+  margin:  20px 0;
   border-radius: 2px;
   border: 1px solid #e6e6e6;
   box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.11);
@@ -14,6 +15,7 @@ export const Card = styled.div`
   @media (min-width: 576px) {
     min-width: 305px;
     min-height: 241px;
+    margin: 20px;
   }
 `;
 

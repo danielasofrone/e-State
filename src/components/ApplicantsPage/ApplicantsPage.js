@@ -86,21 +86,12 @@ const ApplicantsPage = ({ location: { search } }) => {
             onChange={onChangeSearchField}
           />
         </form>
-
-        <S.DropdownFilters>
-          <S.DropdownButton>
-            <S.DropdownText>Bids &#9662;</S.DropdownText>
-          </S.DropdownButton>
-          <S.DropdownButton>
-            <S.DropdownText>Status &#9662;</S.DropdownText>
-          </S.DropdownButton>
-        </S.DropdownFilters>
       </S.SearchBarContent>
 
       {statusList.map((statusItem) => (
         <div key={statusItem.name}>
           <S.CategoryTitle>{statusItem.title}</S.CategoryTitle>
-          <S.Grid>
+          <S.CardsConatiner>
             {filterApplicantsByStatus(
               applicants.filteredData,
               statusItem.name
@@ -116,7 +107,7 @@ const ApplicantsPage = ({ location: { search } }) => {
                 color={applicant.color}
               />
             ))}
-          </S.Grid>
+          </S.CardsConatiner>
         </div>
       ))}
     </S.Wrapper>
